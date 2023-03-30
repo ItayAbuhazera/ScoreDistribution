@@ -11,12 +11,14 @@
         <Grid.Background>
             <ImageBrush TileMode="None" ImageSource="/View/img1038337.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <Border BorderThickness="1" Background="White" Margin="249,125,269,157" BorderBrush="#FF9B744E"/>
-        <Label x:Name="UserEmail" Content="Department Number:" HorizontalAlignment="Left" Margin="256,132,0,0" VerticalAlignment="Top" Height="25" Width="127"/>
-        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="416,164,0,0" VerticalAlignment="Top" Width="56" Height="16" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="415,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" TextChanged="UserEmail_TextChanged" BorderBrush="#FF38393C"/>
-        <Button Content="Find" HorizontalAlignment="Left" Margin="364,263,0,0" VerticalAlignment="Top" Click="Login_Click" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
-        <Label x:Name="ProjectName" Content="Kanban" HorizontalAlignment="Left" Margin="210,9,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="#FFF8892D" FontFamily="Times New Roman" FontSize="100" FontStyle="Normal" FontWeight="Bold" VerticalContentAlignment="Top" BorderThickness="6,6,6,6" Visibility="Visible" Cursor="AppStarting" RenderTransformOrigin="0.5,0.5" Width="355">
+        <Border BorderThickness="1" Background="White" Margin="249,125,269,184" BorderBrush="#FF9B744E" Height="NaN">
+            <PasswordBox x:Name="Password_Copy1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="56" Height="10" BorderBrush="#FF38393C" Margin="159,74,0,0"/>
+        </Border>
+        <Label x:Name="UserEmail" Content="Department Number:" HorizontalAlignment="Left" Margin="255,131,0,0" VerticalAlignment="Top" Height="25" Width="127"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="409,160,0,0" VerticalAlignment="Top" Width="56" Height="10" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="409,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextChanged="UserEmail_TextChanged" BorderBrush="#FF38393C" Height="10"/>
+        <Button Content="Find" HorizontalAlignment="Left" Margin="370,245,0,0" VerticalAlignment="Top" Click="Login_Click" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
+        <Label x:Name="ProjectName" Content="Scorian" HorizontalAlignment="Left" Margin="210,9,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="#FFF8892D" FontFamily="Times New Roman" FontSize="100" FontStyle="Normal" FontWeight="Bold" VerticalContentAlignment="Top" BorderThickness="6,6,6,6" Visibility="Visible" Cursor="AppStarting" RenderTransformOrigin="0.5,0.5" Width="355" Height="115">
             <Label.Style>
                 <Style/>
             </Label.Style>
@@ -32,11 +34,12 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="Passwordlbl" Content="Degree:" HorizontalAlignment="Left" Margin="328,160,0,0" VerticalAlignment="Top"  Height="25" Width="63"/>
-        <Label x:Name="Passwordlbl_Copy" Content="Course ID:" HorizontalAlignment="Left" Margin="316,186,0,0" VerticalAlignment="Top"  Height="26" Width="87"/>
-        <PasswordBox x:Name="Password_Copy" HorizontalAlignment="Left" Margin="416,190,0,0" VerticalAlignment="Top" Width="56" Height="16" BorderBrush="#FF38393C"/>
-        <Label x:Name="Passwordlbl_Copy1" Content="Year:" HorizontalAlignment="Left" Margin="343,0,0,0" VerticalAlignment="Center"  Height="26" Width="38"/>
-        <PasswordBox x:Name="Password_Copy1" HorizontalAlignment="Left" Margin="417,0,0,0" VerticalAlignment="Center" Width="56" Height="16" BorderBrush="#FF38393C"/>
+        <Label x:Name="Passwordlbl" Content="Degree:" HorizontalAlignment="Left" Margin="327,151,0,0" VerticalAlignment="Top"  Height="27" Width="64"/>
+        <Label x:Name="Passwordlbl_Copy" Content="Course ID:" HorizontalAlignment="Left" Margin="314,170,0,0" VerticalAlignment="Top"  Height="26" Width="87"/>
+        <Label x:Name="Passwordlbl_Copy1" Content="Year:" HorizontalAlignment="Left" Margin="344,191,0,0" VerticalAlignment="Top"  Height="26" Width="38" RenderTransformOrigin="0.525,0.599"/>
+        <Label x:Name="Passwordlbl_Copy2" Content="Semster:" HorizontalAlignment="Left" Margin="324,210,0,0" VerticalAlignment="Top"  Height="26" Width="59"/>
+        <PasswordBox x:Name="Password_Copy" HorizontalAlignment="Left" Margin="409,179,0,0" VerticalAlignment="Top" Width="56" Height="10" BorderBrush="#FF38393C"/>
+        <PasswordBox x:Name="Password_Copy2" HorizontalAlignment="Left" Margin="409,219,0,0" VerticalAlignment="Top" Width="56" Height="10" BorderBrush="#FF38393C"/>
     </Grid>
 
 </Window>

@@ -40,6 +40,7 @@
         <Label x:Name="Passwordlbl" Content="Password:" HorizontalAlignment="Left" Margin="263,170,0,0" VerticalAlignment="Top"  Height="29" Width="74" FontSize="15"/>
         <Label x:Name="ID_LBL" Content="ID:" HorizontalAlignment="Left" Margin="263,200,0,0" VerticalAlignment="Top"  Height="30" Width="41" FontSize="15"/>
         <TextBox x:Name="ID" HorizontalAlignment="Left" Margin="358,205,0,0" VerticalAlignment="Top" Width="120" Height="18" BorderBrush="#FF38393C"/>
+        <Label x:Name="CopyRight" Content="© 2023 ItayAbuhazera" HorizontalAlignment="Left" Margin="160,460,0,0" VerticalAlignment="Top"  Height="21" Width="106" FontSize="9" FontWeight="Bold"/>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 

@@ -20,7 +20,7 @@ namespace Backend
             scraper.Login("itayab", "ItAb2023", "207217654");
 
             // Get the score distribution for a specific course, year, semester, department number, and degree level
-            scraper.GetScoreDistribution(2041, 2019, 1, 372, 1);
+            //scraper.GetScoreDistribution(3305, 2019, 1, 372, 1);
 
             // Quit the web driver and free resources
             scraper.Quit();

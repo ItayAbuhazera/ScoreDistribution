@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Backend;
 
 namespace Frontend1
 {
@@ -23,6 +24,15 @@ namespace Frontend1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            string name = this.name.Text;
+            string password = this.Password.Password;
+            string id = this.ID.Password;
+            ScoreDistributionScraper scraper = new ScoreDistributionScraper();
+            scraper.login(name, password, id);
         }
     }
 }

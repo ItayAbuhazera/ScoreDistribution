@@ -13,8 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Backend;
+using WpfApp1.VIew;
 
-namespace WpfApp1
+namespace WpfApp1.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,7 +25,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            // MainFrame.Source = new Uri("MainWindow.xaml", UriKind.Relative);
+            ResizeMode = ResizeMode.NoResize;
         }
 
         private void LoginButton_OnClick(object sender, RoutedEventArgs e)
@@ -32,12 +33,14 @@ namespace WpfApp1
             
             string userName = this.name.Text;
             string password = this.Password.Password;
-            string id = this.ID.Password;
+            string id = this.ID.Text;
             ScoreDistributionScraper scraper = new ScoreDistributionScraper();
             try
             {
                 scraper.Login(userName, password, id);
-                MainFrame.Content = new CourseDetails();
+                MessageBox.Show("Login");
+                CourseDetails courseDetails = new CourseDetails(scraper);
+                MainFrame.NavigationService.Navigate(courseDetails);
             }
             catch (Exception exception)
             {

@@ -12,9 +12,9 @@
             <ImageBrush TileMode="None" ImageSource="/View/img1038337.jpg" Stretch="Fill"/>
         </Grid.Background>
         <Border BorderThickness="1" Background="White" Margin="249,125,269,157" BorderBrush="#FF9B744E"/>
-        <Label x:Name="UserEmail" Content="Email:" HorizontalAlignment="Left" Margin="290,132,0,0" VerticalAlignment="Top" Height="25" Width="41"/>
+        <Label x:Name="UserName" Content="Name:" HorizontalAlignment="Left" Margin="280,132,0,0" VerticalAlignment="Top" Height="25" Width="51"/>
         <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="351,168,0,0" VerticalAlignment="Top" Width="120" Height="16" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="351,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="UserEmail_TextChanged" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="351,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="UserEmail_TextChanged" BorderBrush="#FF38393C"/>
         <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="364,263,0,0" VerticalAlignment="Top" Click="Login_Click" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
         <CheckBox x:Name="CheckBox1" Content="I agree to the terms and conditions" IsChecked="False" HorizontalAlignment="Left" Margin="278,242,0,0" VerticalAlignment="Top" Width="210"/>
         <Label x:Name="ProjectName" Content="Scorian" HorizontalAlignment="Left" Margin="210,9,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="#FFF8892D" FontFamily="Times New Roman" FontSize="100" FontStyle="Normal" FontWeight="Bold" VerticalContentAlignment="Top" BorderThickness="6,6,6,6" Visibility="Visible" Cursor="AppStarting" RenderTransformOrigin="0.5,0.5" Width="355">

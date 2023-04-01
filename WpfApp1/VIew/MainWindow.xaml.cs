@@ -38,7 +38,6 @@ namespace WpfApp1.View
             try
             {
                 scraper.Login(userName, password, id);
-                MessageBox.Show("Login");
                 CourseDetails courseDetails = new CourseDetails(scraper);
                 MainFrame.NavigationService.Navigate(courseDetails);
             }

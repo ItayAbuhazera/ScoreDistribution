@@ -11,15 +11,15 @@
         <Grid.Background>
             <ImageBrush TileMode="None" ImageSource="/View/img1038337.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <Border BorderThickness="1" Background="White" Margin="278,125,307,197" BorderBrush="#FF9B744E" Height="NaN" Opacity="0.75" CornerRadius="10,10,10,10">
+        <Border BorderThickness="1" Background="White" Margin="240,125,280,175" BorderBrush="#FF9B744E" Height="NaN" Opacity="0.75" CornerRadius="10,10,10,10">
             <Border.Effect>
                 <BlurEffect/>
             </Border.Effect>
         </Border>
-        <Label x:Name="DepartmentLBL" Content="Department Number:" HorizontalAlignment="Left" Margin="284,134,0,0" VerticalAlignment="Top" Height="25" Width="127"/>
-        <TextBox x:Name="DegreeLevel" HorizontalAlignment="Left" Margin="419,160,0,0" VerticalAlignment="Top" Width="56" Height="15" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="DepartmentNum" HorizontalAlignment="Left" Margin="419,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" BorderBrush="#FF38393C" Height="15"/>
-        <Button x:Name="FindButton" Content="Find" HorizontalAlignment="Left" Margin="387,245,0,0" VerticalAlignment="Top" Click="FindButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
+        <Label x:Name="DepartmentLBL" Content="Department Number:" HorizontalAlignment="Left" Margin="250,135,0,0" VerticalAlignment="Top" Height="30" Width="160" FontSize="15"/>
+        <TextBox x:Name="DegreeLevel" HorizontalAlignment="Left" Margin="425,165,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="DepartmentNum" HorizontalAlignment="Left" Margin="425,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" BorderBrush="#FF38393C" Height="18"/>
+        <Button x:Name="FindButton" Content="Find" HorizontalAlignment="Left" Margin="355,270,0,0" VerticalAlignment="Top" Click="FindButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
         <Label x:Name="ProjectName" Content="Scorian" HorizontalAlignment="Left" Margin="210,9,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="#FFF8892D" FontFamily="Times New Roman" FontSize="100" FontStyle="Normal" FontWeight="Bold" VerticalContentAlignment="Top" BorderThickness="6,6,6,6" Visibility="Visible" Cursor="AppStarting" RenderTransformOrigin="0.5,0.5" Width="355" Height="115">
             <Label.Style>
                 <Style/>
@@ -36,13 +36,13 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="DegreeLBL" Content="Degree:" HorizontalAlignment="Left" Margin="284,154,0,0" VerticalAlignment="Top"  Height="27" Width="64"/>
-        <Label x:Name="CourseID_LBL" Content="Course ID:" HorizontalAlignment="Left" Margin="284,173,0,0" VerticalAlignment="Top"  Height="26" Width="87"/>
-        <Label x:Name="YearLBL" Content="Year:" HorizontalAlignment="Left" Margin="284,195,0,0" VerticalAlignment="Top"  Height="25" Width="34" RenderTransformOrigin="0.525,0.599"/>
-        <Label x:Name="SemesterLBL" Content="Semester:" HorizontalAlignment="Left" Margin="284,213,0,0" VerticalAlignment="Top"  Height="26" Width="64"/>
-        <TextBox x:Name="CourseID" HorizontalAlignment="Left" Margin="419,179,0,0" VerticalAlignment="Top" Width="56" Height="15" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="Semester" HorizontalAlignment="Left" Margin="419,219,0,0" VerticalAlignment="Top" Width="56" Height="15" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="Year" HorizontalAlignment="Left" Margin="419,200,0,0" VerticalAlignment="Top" Width="56" Height="15" BorderBrush="#FF38393C"/>
+        <Label x:Name="DegreeLBL" Content="Degree:" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top"  Height="27" Width="64" FontSize="15"/>
+        <Label x:Name="CourseID_LBL" Content="Course ID:" HorizontalAlignment="Left" Margin="250,185,0,0" VerticalAlignment="Top"  Height="26" Width="87" FontSize="15"/>
+        <Label x:Name="YearLBL" Content="Year:" HorizontalAlignment="Left" Margin="250,210,0,0" VerticalAlignment="Top"  Height="28" Width="41" RenderTransformOrigin="0.525,0.599" FontSize="15"/>
+        <Label x:Name="SemesterLBL" Content="Semester:" HorizontalAlignment="Left" Margin="250,235,0,0" VerticalAlignment="Top"  Height="26" Width="82" FontSize="15"/>
+        <TextBox x:Name="CourseID" HorizontalAlignment="Left" Margin="425,190,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="Semester" HorizontalAlignment="Left" Margin="425,240,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="Year" HorizontalAlignment="Left" Margin="425,215,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
     </Grid>
 
 </Page>

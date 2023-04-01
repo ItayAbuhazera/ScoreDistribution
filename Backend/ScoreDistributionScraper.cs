@@ -92,7 +92,6 @@ public class ScoreDistributionScraper
             //if the file already exists, do not download it again
             //check if the directory exist and if not create one
             ChromeOptions options = new ChromeOptions();
-            options.AddArguments("--auto-open-devtools-for-tabs");
             _driver = new ChromeDriver(options);
             string directoryPath = "ScoreDistribution";
             if (!Directory.Exists(directoryPath))

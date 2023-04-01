@@ -5,6 +5,8 @@
         <TargetFramework>net7.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
+        <AssemblyName>Scorian</AssemblyName>
+        <ApplicationIcon>VIew\1602428745921.ico</ApplicationIcon>
     </PropertyGroup>
 
     <ItemGroup>
@@ -34,6 +36,10 @@
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </ApplicationDefinition>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="VIew\1602428745921.ico" />
     </ItemGroup>
 
 </Project>

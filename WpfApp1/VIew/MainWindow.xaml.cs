@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -48,5 +49,25 @@ namespace WpfApp1.View
             }
             
         }
+    private void OnPreviewKeyDown(object sender, KeyEventArgs e)
+    {
+        // Check if the Enter key was pressed
+        if (e.Key == Key.Enter)
+        {
+            // If the focus is on a TextBox, move the focus to the next control in the tab order
+            if (Keyboard.FocusedElement is TextBox textBox)
+            {
+                LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+            }
+            // If the focus is on the LoginButton, simulate a click event
+            else if (Keyboard.FocusedElement == LoginButton)
+            {
+                LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+            }
+
+            // Mark the event as handled so that it doesn't propagate further
+            e.Handled = true;
+        }
+    }
     }
 }

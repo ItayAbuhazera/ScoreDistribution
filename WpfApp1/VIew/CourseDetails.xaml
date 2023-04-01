@@ -16,10 +16,10 @@
                 <BlurEffect/>
             </Border.Effect>
         </Border>
-        <Label x:Name="DepartmentLBL" Content="Department Number:" HorizontalAlignment="Left" Margin="250,135,0,0" VerticalAlignment="Top" Height="30" Width="160" FontSize="15"/>
-        <TextBox x:Name="DegreeLevel" HorizontalAlignment="Left" Margin="425,165,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="DepartmentNum" HorizontalAlignment="Left" Margin="425,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" BorderBrush="#FF38393C" Height="18"/>
-        <Button x:Name="FindButton" Content="Find" HorizontalAlignment="Left" Margin="355,270,0,0" VerticalAlignment="Top" Click="FindButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
+        <Label x:Name="DepartmentLBL"  Content="Department Number:" HorizontalAlignment="Left" Margin="250,135,0,0" VerticalAlignment="Top" Height="30" Width="160" FontSize="15"/>
+        <TextBox x:Name="DegreeLevel" TabIndex="2" HorizontalAlignment="Left" Margin="425,165,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="DepartmentNum" TabIndex="1" HorizontalAlignment="Left" Margin="425,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" BorderBrush="#FF38393C" Height="18"/>
+        <Button x:Name="FindButton" TabIndex="6" Content="Find" HorizontalAlignment="Left" Margin="355,270,0,0" VerticalAlignment="Top" Click="FindButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
         <Label x:Name="ProjectName" Content="Scorian" HorizontalAlignment="Left" Margin="210,9,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="#FFF8892D" FontFamily="Times New Roman" FontSize="100" FontStyle="Normal" FontWeight="Bold" VerticalContentAlignment="Top" BorderThickness="6,6,6,6" Visibility="Visible" Cursor="AppStarting" RenderTransformOrigin="0.5,0.5" Width="355" Height="115">
             <Label.Style>
                 <Style/>
@@ -40,10 +40,12 @@
         <Label x:Name="CourseID_LBL" Content="Course ID:" HorizontalAlignment="Left" Margin="250,185,0,0" VerticalAlignment="Top"  Height="26" Width="87" FontSize="15"/>
         <Label x:Name="YearLBL" Content="Year:" HorizontalAlignment="Left" Margin="250,210,0,0" VerticalAlignment="Top"  Height="28" Width="41" RenderTransformOrigin="0.525,0.599" FontSize="15"/>
         <Label x:Name="SemesterLBL" Content="Semester:" HorizontalAlignment="Left" Margin="250,235,0,0" VerticalAlignment="Top"  Height="26" Width="82" FontSize="15"/>
-        <TextBox x:Name="CourseID" HorizontalAlignment="Left" Margin="425,190,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="Semester" HorizontalAlignment="Left" Margin="425,240,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="Year" HorizontalAlignment="Left" Margin="425,215,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="CourseID" TabIndex="3" HorizontalAlignment="Left" Margin="425,190,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="Semester" TabIndex="5" HorizontalAlignment="Left" Margin="425,240,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
+        <TextBox x:Name="Year" TabIndex="4" HorizontalAlignment="Left" Margin="425,215,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
         <Label x:Name="CopyRight" Content="© 2023 ItayAbuhazera" HorizontalAlignment="Left" Margin="156,446,0,0" VerticalAlignment="Top"  Height="21" Width="106" FontSize="9" FontWeight="Bold"/>
+        <Label x:Name="timerLabel" Content="00:00:00" HorizontalAlignment="Left" Margin="350,0,0,0" VerticalAlignment="Top"  Height="40" Width="100" FontSize="20" FontWeight="Bold" Foreground="#FFF8892D"/>
+        <Frame x:Name="SecondaryFrame" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 
 </Page>

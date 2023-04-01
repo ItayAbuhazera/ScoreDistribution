@@ -43,7 +43,7 @@
         <TextBox x:Name="CourseID" HorizontalAlignment="Left" Margin="425,190,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
         <TextBox x:Name="Semester" HorizontalAlignment="Left" Margin="425,240,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
         <TextBox x:Name="Year" HorizontalAlignment="Left" Margin="425,215,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
-        <Label x:Name="CopyRight" Content="© 2023 ItayAbuhazera" HorizontalAlignment="Left" Margin="158,449,0,0" VerticalAlignment="Top"  Height="21" Width="106" FontSize="9" FontWeight="Bold"/>
+        <Label x:Name="CopyRight" Content="© 2023 ItayAbuhazera" HorizontalAlignment="Left" Margin="156,446,0,0" VerticalAlignment="Top"  Height="21" Width="106" FontSize="9" FontWeight="Bold"/>
     </Grid>
 
 </Page>

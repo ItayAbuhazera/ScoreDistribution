@@ -8,12 +8,14 @@ To run Scorian, you must have the following packages installed:
 
 * Chrome WebDriver
 * Selenium
+
 You can install the required packages using the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+Or you can download the Chrome WebDriver from [here](http://chromedriver.storage.googleapis.com/index.html)
 ## Usage
 
 1. Open the ConsuleApp1.sln file.

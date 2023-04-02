@@ -30,4 +30,6 @@ Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
 
-credit for the readme: github user: yonatan921 and:https://www.makeareadme.com/
+credit for the readme: 
+* GitHub user: yonatan921
+* https://www.makeareadme.com/

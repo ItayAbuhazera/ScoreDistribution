@@ -51,7 +51,7 @@ namespace WpfApp1.View
         }
     private void OnPreviewKeyDown(object sender, KeyEventArgs e)
     {
-        // Check if the Enter key was pressed
+        // Check if the Enter key was pressed and if yes just click the button
         if (e.Key == Key.Enter)
         {
             // If the focus is on a TextBox, move the focus to the next control in the tab order
@@ -60,7 +60,7 @@ namespace WpfApp1.View
                 LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
             }
             // If the focus is on the LoginButton, simulate a click event
-            else if (Keyboard.FocusedElement == LoginButton)
+            else if (Keyboard.FocusedElement.Equals(LoginButton) )
             {
                 LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
             }

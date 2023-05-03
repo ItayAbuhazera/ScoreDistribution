@@ -33,3 +33,9 @@ to discuss what you would like to change.
 credit for the readme: 
 * GitHub user: yonatan921
 * https://www.makeareadme.com/
+
+Pictures as a guide:
+
+![image](https://user-images.githubusercontent.com/93425570/235895871-50b3fb23-8dbc-424c-9a29-f3a5048b86d7.png)
+
+![image](https://user-images.githubusercontent.com/93425570/235895780-5c5d0074-4fee-431c-99b5-5a386a074593.png)

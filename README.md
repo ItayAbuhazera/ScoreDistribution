@@ -36,13 +36,17 @@ credit for the readme:
 
 Pictures as a guide:
 
-Fill your identities.
+Find the icon with the university logo:
 
-![image](https://user-images.githubusercontent.com/93425570/235895871-50b3fb23-8dbc-424c-9a29-f3a5048b86d7.png)
+![image](https://user-images.githubusercontent.com/93425570/235897281-31fe1e77-0bfc-4029-8042-bfb3d7039abb.png)
 
-Fill the details about the course.
+Fill your identities and login.
 
-![image](https://user-images.githubusercontent.com/93425570/235895780-5c5d0074-4fee-431c-99b5-5a386a074593.png)
+![image](https://user-images.githubusercontent.com/93425570/235897437-645c9f8c-12c9-4574-a71c-320df637b188.png)
+
+Fill the details about the course(you have 5 minutes before the web will log you out).
+
+![image](https://user-images.githubusercontent.com/93425570/235897684-db9efcf4-11e8-475d-87d5-0408ee5388ac.png)
 
 There you go.
 

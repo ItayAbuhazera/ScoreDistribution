@@ -35,7 +35,9 @@ credit for the readme:
 * https://www.makeareadme.com/
 
 Pictures as a guide:
-
+Fill your identities.
 ![image](https://user-images.githubusercontent.com/93425570/235895871-50b3fb23-8dbc-424c-9a29-f3a5048b86d7.png)
-
+Fill the details about the course.
 ![image](https://user-images.githubusercontent.com/93425570/235895780-5c5d0074-4fee-431c-99b5-5a386a074593.png)
+There you go.
+![image](https://user-images.githubusercontent.com/93425570/235896247-10c96903-56a1-4f20-b390-41713a00f0e7.png)

@@ -7,11 +7,13 @@ using System.Windows.Input;
 using System.Windows.Threading;
 using WpfApp1.View;
 
+
 namespace WpfApp1.VIew;
 
 public partial class CourseDetails : Page
 {
     private ScoreDistributionScraper scraper;
+    private CourseSyllabusScraper scraper2;
     private DispatcherTimer timer;
     private int countdownSeconds = 5 * 60;
     public CourseDetails(ScoreDistributionScraper scraper)
@@ -41,7 +43,7 @@ public partial class CourseDetails : Page
             timerLabel.Content = str;
         }
     }
-    private void FindButton_OnClick(object sender, RoutedEventArgs e)
+    private void ScoreButton_OnClick(object sender, RoutedEventArgs e)
     {
         //when the find button is clicked, the user will be redirected to the score distribution page
         //the user will be able to see the score distribution of the course he chose
@@ -61,17 +63,33 @@ public partial class CourseDetails : Page
             // If the focus is on a TextBox, move the focus to the next control in the tab order
             if (Keyboard.FocusedElement is TextBox textBox)
             {
-                FindButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+                ScoreButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
             }
             // If the focus is on the LoginButton, simulate a click event
-            else if (Keyboard.FocusedElement == FindButton)
+            else if (Keyboard.FocusedElement == ScoreButton)
             {
-                FindButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+                ScoreButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+            }
+            else if (Keyboard.FocusedElement == SyllabusButton)
+            {
+                SyllabusButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
             }
 
             // Mark the event as handled so that it doesn't propagate further
             e.Handled = true;
         }
     }
-}    
+
+    private void SyllabusButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        scraper2 = new CourseSyllabusScraper();
+        string courseId = this.CourseID.Text;
+        string departmentNumber = this.DepartmentNum.Text;
+        string courseYear = this.Year.Text;
+        string courseSemester = this.Semester.Text;
+        string degreeLevel = this.DegreeLevel.Text;
+        scraper2.GoCoursePDF(departmentNumber, degreeLevel, courseId, courseYear, courseSemester);
+
+    }
+}
 //<Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>

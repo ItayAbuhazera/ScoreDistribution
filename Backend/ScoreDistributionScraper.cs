@@ -106,47 +106,6 @@ public class ScoreDistributionScraper
             // Wait for the new URL to appear
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(20));
             wait.PollingInterval = TimeSpan.FromMilliseconds(3000);
-            //wait.Until(ExpectedConditions.UrlContains("https://reports4u22.bgu.ac.il/reports/rwservlet"));
-
-            //Download the PDF using the WebClient
-            //using (var client = new WebClient())
-            //{
-            //    Console.WriteLine("Downloading PDF..." + driver.Url);
-            //    client.DownloadFile(driver.Url, "ScoreDistribution/" + courseId + "_" + year + "_" + semester + ".pdf");
-            //}
-            // Get the print button and click it
-            //IWebElement printButton = driver.FindElement(By.XPath("/html/body/pdf-viewer//viewer-toolbar//div/div[3]/viewer-download-controls//cr-icon-button"));
-            //printButton.Click();
-
-            //// Wait for the print dialog to appear
-            //wait.Until(ExpectedConditions.AlertIsPresent());
-
-            //// Switch to the print dialog
-            //IAlert printDialog = driver.SwitchTo().Alert();
-
-            //// Send the Enter key to the print dialog to initiate the download
-            //printDialog.SendKeys(Keys.Enter);
-
-            //// Wait for the file to download
-            //string filePath = $"ScoreDistribution/{courseId}_{year}_{semester}.pdf";
-            //using (var httpClient = new HttpClient())
-            //{
-            //    var response = await httpClient.GetAsync(driver.Url);
-            //    using (var stream = await response.Content.ReadAsStreamAsync())
-            //    {
-            //        using (var fileStream = new FileStream(filePath, FileMode.Create))
-            //        {
-            //            await stream.CopyToAsync(fileStream);
-            //        }
-            //    }
-            //}
-
-
-            //save the pdf file in the folder "ScoreDistribution"
-            //the file name should be in this form: {courseId}_{year}_{semester}.pdf
-            // Download the PDF using the WebDriver
-            //Get the PDF using the WebDriver
-
 
 
         }

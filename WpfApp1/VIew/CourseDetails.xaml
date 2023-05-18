@@ -5,7 +5,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d"
-      Title="CourseDetails" Height="477" Width="809">
+      Title="Course Details" Height="477" Width="809">
 
     <Grid Margin="0,0,0,0">
         <Grid.Background>
@@ -19,7 +19,8 @@
         <Label x:Name="DepartmentLBL"  Content="Department Number:" HorizontalAlignment="Left" Margin="250,135,0,0" VerticalAlignment="Top" Height="30" Width="160" FontSize="15"/>
         <TextBox x:Name="DegreeLevel" TabIndex="2" HorizontalAlignment="Left" Margin="425,165,0,0" VerticalAlignment="Top" Width="65" Height="18" BorderBrush="#FF38393C"/>
         <TextBox x:Name="DepartmentNum" TabIndex="1" HorizontalAlignment="Left" Margin="425,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" BorderBrush="#FF38393C" Height="18"/>
-        <Button x:Name="FindButton" TabIndex="6" Content="Find" HorizontalAlignment="Left" Margin="355,270,0,0" VerticalAlignment="Top" Click="FindButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
+        <Button x:Name="SyllabusButton" TabIndex="7" Content="Syllabus" HorizontalAlignment="Left" Margin="389,270,0,0" VerticalAlignment="Top" Click="SyllabusButton_OnClick" Width="48" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
+        <Button x:Name="ScoreButton" TabIndex="6" Content="Score" HorizontalAlignment="Left" Margin="312,270,0,0" VerticalAlignment="Top" Click="ScoreButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
         <Label x:Name="ProjectName" Content="Scorian" HorizontalAlignment="Left" Margin="210,9,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="#FFF8892D" FontFamily="Times New Roman" FontSize="100" FontStyle="Normal" FontWeight="Bold" VerticalContentAlignment="Top" BorderThickness="6,6,6,6" Visibility="Visible" Cursor="AppStarting" RenderTransformOrigin="0.5,0.5" Width="355" Height="115">
             <Label.Style>
                 <Style/>

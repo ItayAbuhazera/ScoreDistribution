@@ -5,22 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="505" Width="830">
+        Title="Scorian" Height="505" Width="830">
 
     <Grid>
         <Grid.Background>
             <ImageBrush TileMode="None" ImageSource="/View/img1038337.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <Border BorderThickness="3,3,3,3" Background="White" Margin="245,130,280,190" BorderBrush="#FF9B744E" Opacity="0.75" CornerRadius="10,10,10,10">
-            <Border.Effect>
-                <BlurEffect/>
-            </Border.Effect>
-        </Border>
-        <Label x:Name="UserName" Content="Name:" HorizontalAlignment="Left" Margin="263,140,0,0" VerticalAlignment="Top" Height="30" Width="74" FontSize="15" FontFamily="Segoe UI Symbol"/>
-        <PasswordBox x:Name="Password" TabIndex="2" HorizontalAlignment="Left" Margin="358,175,0,0" VerticalAlignment="Top" Width="120" Height="18" BorderBrush="#FF38393C"/>
-        <TextBox x:Name="name" TabIndex="1" HorizontalAlignment="Left" Margin="358,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" BorderBrush="#FF38393C"/>
-        <Button x:Name="LoginButton" TabIndex="4" Content="Login" HorizontalAlignment="Left" Margin="375,246,0,0" VerticalAlignment="Top" Click="LoginButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
-        <CheckBox x:Name="CheckBox1" Content="I agree to the terms and conditions" IsChecked="False" HorizontalAlignment="Left" Margin="290,228,0,0" VerticalAlignment="Top" Width="210"/>
         <Label x:Name="ProjectName" Content="Scorian" HorizontalAlignment="Left" Margin="210,4,0,0" VerticalAlignment="Top" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="#FFF8892D" FontFamily="Times New Roman" FontSize="100" FontStyle="Normal" FontWeight="Bold" VerticalContentAlignment="Top" BorderThickness="6,6,6,6" Visibility="Visible" Cursor="AppStarting" RenderTransformOrigin="0.5,0.5" Width="369" Height="115">
             <Label.Style>
                 <Style/>
@@ -37,11 +27,31 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
+        <Border BorderThickness="3,3,3,3" Background="White" Margin="245,130,280,190" BorderBrush="#FF9B744E" Opacity="0.75" CornerRadius="10,10,10,10">
+            <Border.Effect>
+                <BlurEffect/>
+            </Border.Effect>
+        </Border>
+        <Label x:Name="UserName" Content="Name:" HorizontalAlignment="Left" Margin="263,140,0,0" VerticalAlignment="Top" Height="30" Width="74" FontSize="15" FontFamily="Segoe UI Symbol"/>
+        <TextBox x:Name="name" TabIndex="1" HorizontalAlignment="Left" Margin="358,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" BorderBrush="#FF38393C"/>
         <Label x:Name="Passwordlbl" Content="Password:" HorizontalAlignment="Left" Margin="263,170,0,0" VerticalAlignment="Top"  Height="29" Width="74" FontSize="15"/>
+        <PasswordBox x:Name="Password" TabIndex="2" HorizontalAlignment="Left" Margin="358,175,0,0" VerticalAlignment="Top" Width="120" Height="18" BorderBrush="#FF38393C"/>
         <Label x:Name="ID_LBL" Content="ID:" HorizontalAlignment="Left" Margin="263,200,0,0" VerticalAlignment="Top"  Height="30" Width="41" FontSize="15"/>
         <TextBox x:Name="ID" TabIndex="3" HorizontalAlignment="Left" Margin="358,205,0,0" VerticalAlignment="Top" Width="120" Height="18" BorderBrush="#FF38393C"/>
+        <CheckBox x:Name="CheckBox1" Content="I agree to the terms and conditions" IsChecked="False" 
+          HorizontalAlignment="Left" Margin="290,228,0,0" VerticalAlignment="Top" Width="210">
+            <CheckBox.ToolTip>
+                <TextBlock>
+            <Hyperlink NavigateUri="https://bgu4u22.bgu.ac.il/apex/f?p=104:35" RequestNavigate="Hyperlink_RequestNavigate">
+                Click here to view the terms and conditions, or it's very simple, don't use this app for bad stuff:)
+            </Hyperlink>
+                </TextBlock>
+            </CheckBox.ToolTip>
+        </CheckBox>
         <Label x:Name="CopyRight" Content="© 2023 ItayAbuhazera" HorizontalAlignment="Left" Margin="156,440,0,0" VerticalAlignment="Top"  Height="21" Width="106" FontSize="9" FontWeight="Bold"/>
+        <Button x:Name="LoginButton" TabIndex="4" Content="Login" HorizontalAlignment="Left" Margin="375,245,0,0" VerticalAlignment="Top" Click="LoginButton_OnClick" Width="40" Background="#FFED8629" BorderBrush="#FF0A0909" Foreground="Black"/>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
+
     </Grid>
 
 </Window>

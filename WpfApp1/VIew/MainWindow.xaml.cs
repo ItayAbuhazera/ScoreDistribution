@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 using Backend;
 using WpfApp1.VIew;
 
@@ -49,25 +50,31 @@ namespace WpfApp1.View
             }
             
         }
-    private void OnPreviewKeyDown(object sender, KeyEventArgs e)
-    {
-        // Check if the Enter key was pressed and if yes just click the button
-        if (e.Key == Key.Enter)
+        private void OnPreviewKeyDown(object sender, KeyEventArgs e)
         {
-            // If the focus is on a TextBox, move the focus to the next control in the tab order
-            if (Keyboard.FocusedElement is TextBox textBox)
+            // Check if the Enter key was pressed and if yes just click the button
+            if (e.Key == Key.Enter)
             {
-                LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
-            }
-            // If the focus is on the LoginButton, simulate a click event
-            else if (Keyboard.FocusedElement.Equals(LoginButton) )
-            {
-                LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
-            }
+                // If the focus is on a TextBox, move the focus to the next control in the tab order
+                if (Keyboard.FocusedElement is TextBox textBox)
+                {
+                    LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+                }
+                // If the focus is on the LoginButton, simulate a click event
+                else if (Keyboard.FocusedElement.Equals(LoginButton) )
+                {
+                    LoginButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+                }
 
-            // Mark the event as handled so that it doesn't propagate further
-            e.Handled = true;
+                // Mark the event as handled so that it doesn't propagate further
+                e.Handled = true;
+            }
         }
-    }
+        //funciton that get a click on hyper link and open a new window with the link
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
+        }
+        
     }
 }

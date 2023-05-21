@@ -88,8 +88,13 @@ public partial class CourseDetails : Page
         string courseYear = this.Year.Text;
         string courseSemester = this.Semester.Text;
         string degreeLevel = this.DegreeLevel.Text;
-        scraper2.GoCoursePDF(departmentNumber, degreeLevel, courseId, courseYear, courseSemester);
-
+        try
+        {
+            scraper2.GoCoursePDF(departmentNumber, degreeLevel, courseId, courseYear, courseSemester);
+        }catch(Exception exp)
+        {
+            MessageBox.Show("The syllabus is not available" + "\n" + exp.Message);
+        }
     }
 }
 //<Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>

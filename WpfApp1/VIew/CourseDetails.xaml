@@ -37,7 +37,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="DegreeLBL" Content="Degree:" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top"  Height="27" Width="64" FontSize="15"/>
+        <Label x:Name="DegreeLBL" Content="Degree:" HorizontalAlignment="Left" Margin="250,160,0,0" VerticalAlignment="Top"  Height="30" Width="64" FontSize="15"/>
         <Label x:Name="CourseID_LBL" Content="Course ID:" HorizontalAlignment="Left" Margin="250,185,0,0" VerticalAlignment="Top"  Height="26" Width="87" FontSize="15"/>
         <Label x:Name="YearLBL" Content="Year:" HorizontalAlignment="Left" Margin="250,210,0,0" VerticalAlignment="Top"  Height="28" Width="41" RenderTransformOrigin="0.525,0.599" FontSize="15"/>
         <Label x:Name="SemesterLBL" Content="Semester:" HorizontalAlignment="Left" Margin="250,235,0,0" VerticalAlignment="Top"  Height="26" Width="82" FontSize="15"/>

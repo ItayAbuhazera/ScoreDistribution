@@ -7,6 +7,19 @@
         <UseWPF>true</UseWPF>
         <AssemblyName>Scorian</AssemblyName>
         <ApplicationIcon>VIew\1602428745921.ico</ApplicationIcon>
+        <UseWindowsForms>True</UseWindowsForms>
+        <StartupObject>WpfApp1.VIew.App</StartupObject>
+        <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+        <EnableNETAnalyzers>False</EnableNETAnalyzers>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <Optimize>True</Optimize>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <Optimize>False</Optimize>
     </PropertyGroup>
 
     <ItemGroup>

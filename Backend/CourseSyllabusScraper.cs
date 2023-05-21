@@ -24,7 +24,9 @@ namespace Backend
             ChromeOptions options = new ChromeOptions();
             //options.AddArgument("--headless"); // Run the browser in headless mode
             //options.AddArguments("--auto-open-devtools-for-tabs");
-            driver = new ChromeDriver(options);
+            var chromeDriverService = ChromeDriverService.CreateDefaultService();
+            chromeDriverService.HideCommandPromptWindow = true;
+            driver = new ChromeDriver(chromeDriverService, options);
         }
         
         public void GoCoursePDF(string courseDepartment, string courseDegreeLevel, string course,
@@ -74,11 +76,18 @@ namespace Backend
             submitButton.Click();
             // Find the element using XPath
             var element = driver.FindElement(By.XPath("//a[contains(@href, 'goCourseSemester')]"));
-
-            // Click on the element
-            element.Click();
-            // Find the link to the syllabus and navigate to it
-            driver.FindElement(By.XPath("//a[contains(@href, 'goCoursePDF')]")).Click();
+            try 
+            { 
+                // Click on the element
+                element.Click();
+                // Find the link to the syllabus and navigate to it
+                driver.FindElement(By.XPath("//a[contains(@href, 'goCoursePDF')]")).Click();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Course not found");
+                throw new Exception("Course not found");
+            }
 
 
             // Initialize a new instance of ChromeDriver without headless mode

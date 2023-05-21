@@ -25,8 +25,10 @@ public class ScoreDistributionScraper
             // Initialize the web driver using the ChromeDriver
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--headless"); // Run the browser in headless mode
-            //options.AddArguments("--auto-open-devtools-for-tabs");
-            _driver = new ChromeDriver(options);
+                                               //options.AddArguments("--auto-open-devtools-for-tabs");
+            var chromeDriverService = ChromeDriverService.CreateDefaultService();
+            chromeDriverService.HideCommandPromptWindow = true;
+            _driver = new ChromeDriver(chromeDriverService, options);
             LoginToken = "";
         }
         
@@ -92,7 +94,9 @@ public class ScoreDistributionScraper
             //if the file already exists, do not download it again
             //check if the directory exist and if not create one
             ChromeOptions options = new ChromeOptions();
-            _driver = new ChromeDriver(options);
+            var chromeDriverService = ChromeDriverService.CreateDefaultService();
+            chromeDriverService.HideCommandPromptWindow = true;
+            _driver = new ChromeDriver(chromeDriverService, options);
             string directoryPath = "ScoreDistribution";
             if (!Directory.Exists(directoryPath))
             {
